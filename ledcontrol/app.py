@@ -124,7 +124,7 @@ def create_app(led_count,
                 print('Successfully upgraded save file.')
 
             # Enforce sACN off when starting up
-            settings['settings']['sacn'] = 0
+            settings['settings']['sacn'] = 1
             settings['settings']['calibration'] = 0
 
             # Set controller settings, (automatically) recalculate things that depend on them
